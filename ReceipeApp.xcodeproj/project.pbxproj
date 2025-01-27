@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		910E6FB22D46135D0066764B /* NetworkingKit in Frameworks */ = {isa = PBXBuildFile; productRef = 910E6FB12D46135D0066764B /* NetworkingKit */; };
+		910E6FBC2D461F150066764B /* DesignSystemKit in Frameworks */ = {isa = PBXBuildFile; productRef = 910E6FBB2D461F150066764B /* DesignSystemKit */; };
+		910E6FBE2D461F150066764B /* ReceipeListKit in Frameworks */ = {isa = PBXBuildFile; productRef = 910E6FBD2D461F150066764B /* ReceipeListKit */; };
+		9130938B2D46DAA700D217B9 /* Testing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9130938A2D46DAA700D217B9 /* Testing.framework */; platformFilter = ios; };
+		9130938C2D46DAA700D217B9 /* Testing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9130938A2D46DAA700D217B9 /* Testing.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		910E6F932D4612C00066764B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,10 +31,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9130938D2D46DAA700D217B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9130938C2D46DAA700D217B9 /* Testing.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		910E6F822D4612BF0066764B /* ReceipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReceipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		910E6F922D4612C00066764B /* ReceipeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceipeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		910E6F9C2D4612C00066764B /* ReceipeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReceipeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		910E6FAF2D4612EF0066764B /* NetworkingKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = NetworkingKit; path = Packages/NetworkingKit; sourceTree = "<group>"; };
+		910E6FB92D461D2D0066764B /* ReceipeListKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ReceipeListKit; path = Packages/ReceipeListKit; sourceTree = "<group>"; };
+		910E6FBA2D461DC70066764B /* DesignSystemKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DesignSystemKit; path = Packages/DesignSystemKit; sourceTree = "<group>"; };
+		9130938A2D46DAA700D217B9 /* Testing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Testing.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/Testing.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910E6FBC2D461F150066764B /* DesignSystemKit in Frameworks */,
+				910E6FB22D46135D0066764B /* NetworkingKit in Frameworks */,
+				910E6FBE2D461F150066764B /* ReceipeListKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9130938B2D46DAA700D217B9 /* Testing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +105,13 @@
 		910E6F792D4612BF0066764B = {
 			isa = PBXGroup;
 			children = (
+				910E6FBA2D461DC70066764B /* DesignSystemKit */,
+				910E6FB92D461D2D0066764B /* ReceipeListKit */,
+				910E6FAF2D4612EF0066764B /* NetworkingKit */,
 				910E6F842D4612BF0066764B /* ReceipeApp */,
 				910E6F952D4612C00066764B /* ReceipeAppTests */,
 				910E6F9F2D4612C00066764B /* ReceipeAppUITests */,
+				910E6FB02D46135D0066764B /* Frameworks */,
 				910E6F832D4612BF0066764B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +124,14 @@
 				910E6F9C2D4612C00066764B /* ReceipeAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		910E6FB02D46135D0066764B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9130938A2D46DAA700D217B9 /* Testing.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +154,9 @@
 			);
 			name = ReceipeApp;
 			packageProductDependencies = (
+				910E6FB12D46135D0066764B /* NetworkingKit */,
+				910E6FBB2D461F150066764B /* DesignSystemKit */,
+				910E6FBD2D461F150066764B /* ReceipeListKit */,
 			);
 			productName = ReceipeApp;
 			productReference = 910E6F822D4612BF0066764B /* ReceipeApp.app */;
@@ -124,6 +169,7 @@
 				910E6F8E2D4612C00066764B /* Sources */,
 				910E6F8F2D4612C00066764B /* Frameworks */,
 				910E6F902D4612C00066764B /* Resources */,
+				9130938D2D46DAA700D217B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -399,11 +445,13 @@
 				DEVELOPMENT_TEAM = PYFZEY2H5U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ReceipeApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,11 +476,13 @@
 				DEVELOPMENT_TEAM = PYFZEY2H5U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ReceipeApp;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +608,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		910E6FB12D46135D0066764B /* NetworkingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkingKit;
+		};
+		910E6FBB2D461F150066764B /* DesignSystemKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DesignSystemKit;
+		};
+		910E6FBD2D461F150066764B /* ReceipeListKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ReceipeListKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 910E6F7A2D4612BF0066764B /* Project object */;
 }
