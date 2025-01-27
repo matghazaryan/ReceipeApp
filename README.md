@@ -1,15 +1,15 @@
 ### RecipeApp
 
-RecipeApp is a simple and elegant app that demonstrates clean architecture, modularity, and robust error handling for various data scenarios. It fetches recipe data from the network and provides a clean and intuitive interface to showcase its features. The project prioritizes clean code, dependency injection, and MVVM architecture with full unit testing support.
+RecipeApp is a simple app that demonstrates clean architecture, modularity, and robust error handling for various data scenarios. It fetches recipe data from the network and provides a clean and intuitive interface to showcase its features. The project prioritizes modularity, clean code, dependency injection, and MVVM architecture with full unit testing support.
 
 
 
 ### 🎥 Summary
 
 RecipeApp allows users to fetch and view recipes with three distinct options:
-	•	List: Fetches and displays a list of recipes.
-	•	Malformed: Handles malformed data gracefully.
-	•	Empty: Demonstrates how the app manages an empty dataset.
+- List: Fetches and displays a list of recipes.
+- Malformed: Handles malformed data gracefully.
+- Empty: Demonstrates how the app manages an empty dataset.
 
 Demo Video:
 
