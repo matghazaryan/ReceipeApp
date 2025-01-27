@@ -77,5 +77,5 @@ The project’s size makes it difficult to highlight significant weaknesses. How
  - Covers data and domain layers.
 
 ### 🧩 Project Structure
-<img width="894" alt="image" src="https://github.com/user-attachments/assets/adb6f231-403e-4716-9f77-18414a0e7a29" />
+<img width="886" alt="image" src="https://github.com/user-attachments/assets/63c37594-aa44-4e30-8873-f50c622cd189" />
 
